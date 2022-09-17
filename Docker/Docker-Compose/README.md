@@ -17,10 +17,10 @@ colima를 실행 시키니 해당 에러는 사라짐
 ## chown: changing ownership of '/var/lib/mysql': Permission denied
 
 docker-compose up 명령어 실행 시키니, 새로운 에러 등장  
-mysql 데이터베이스를 담당하는 도커 컨테이너의 var/lib/mysql' 의 모든 하위 경로에 대한 권한이 없다고 함  
+mysql 데이터베이스를 담당하는 도커 컨테이너의 'var/lib/mysql' 의 모든 하위 경로에 대한 권한이 없다고 함  
 colima 에서는 호스트의 uid(유저 아이디)와 gid(그룹 아이디)를 지정해야 한다고 함  
 docker-compose.yml 파일에서 uid와, gid를 지정 해주니 에러 해결
 
-    참고  
-    https://bytemeta.vip/repo/abiosoft/colima/issues/362  
+    참고
+    https://bytemeta.vip/repo/abiosoft/colima/issues/362
     https://sweethoneybee.tistory.com/28
