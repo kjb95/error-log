@@ -9,6 +9,10 @@ git config --global user.email 이메일 : 계정 이메일 변경
 git config --list : 깃 설정 확인  
 계정을 변경했지만 여전히 안됨
 
+## 깃허브 레파지토리 접근하는 방법
+- HTTPS : 깃이 제공하는 Credential 저장소에 캐싱된 계정 정보를 이용하여 접근
+- SSH : 발급받은 ssh key를 이용하여 사용자 인증
+
 ## ssh-key 생성 및 등록
 
     cd ~/.ssh : ssh 폴더로 이동
